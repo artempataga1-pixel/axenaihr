@@ -43,7 +43,7 @@ async def cmd_start(message: Message, state: FSMContext):
     await state.clear()
     await message.answer(
         "Привет! Я бот для приёма заявок в команду AxenAI.\n"
-        "Отвечу на несколько вопросов — это займёт пару минут.\n\n"
+        "Ответь на несколько вопросов — это займёт пару минут.\n\n"
         + QUESTIONS[Survey.name_age]
     )
     await state.set_state(Survey.name_age)
